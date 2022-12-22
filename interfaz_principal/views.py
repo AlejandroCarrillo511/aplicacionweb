@@ -1,0 +1,30 @@
+from django.shortcuts import render
+from .models import contacto
+from .forms import contacto_form
+
+# Create your views here.
+def Inicio(request):
+    return render(request, 'interfaz_principal/Inicio.html')
+
+
+def Nosotros(request):
+    return render(request,'interfaz_principal/nosotros.html')
+
+    
+def Galeria(request):
+    return render(request,'interfaz_principal/Galerias.html')
+
+def Proyectos(request):
+    return render(request,'interfaz_principal/proyectos.html')
+
+def Contactos(request):
+    data = {
+        'form':contacto_form
+    }
+    if request.method == 'POST':
+        formulario = contacto_form(data=request.POST)
+        if formulario.is_valid():
+            formulario.save()
+        else:
+            data['form'] = formulario
+    return render(request,'interfaz_principal/contactos.html', data)

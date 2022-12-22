@@ -1,0 +1,61 @@
+
+    {% load static %}
+
+<title>Galeria</title>
+<link rel="shortcut icon" href="{% static '/img/icono_logo.png' %}" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400&family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet">
+<script src="https://kit.fontawesome.com/9b8103ef2f.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="{% static '/css/syles.css' %}">
+<link rel="stylesheet" href="{% static '/css/normalize.css' %}">
+
+</head>
+<body>
+
+
+<header class="hero">
+    <nav class="nav container">
+        <div class="header-nav">
+            <div class="logo">
+                <div class="logo-imagen" alt="Logo de la marca"></div>
+            </div>
+        </div>
+
+        <ul class="nav__link nav__link--menu">
+            <li class="nav__items">
+                <a href="{% url 'Inicio' %}"class="nav__links">Inicio</a>
+            </li>
+            <li class="nav__items">
+                <a href="{% url 'Nosotros' %}"class="nav__links">Nosotros</a>
+            </li>
+            <li class="nav__items">
+                <a href="{% url 'Proyectos' %}"  class="nav__links">Proyectos</a>
+            </li>
+            <li class="nav__items">
+                <a href="{% url 'Galeria' %}" class="nav__links">Galeria</a>
+            </li>
+            <li class="nav__items">
+                <a href="{% url 'Contactos' %}"  class="nav__links">Contacto</a>
+            </li>
+            <img src="{% static './img/close.svg' %}" class="nav__close">
+        </ul>
+
+        <div class="nav__menu">
+            <img src="{% static './img/menu.svg' %}" class="nav__img">
+        </div>
+    </nav>
+
+
+    <section class="hero__container container">
+        <h1 class="hero__title">Galeria</h1>
+        <p class="hero__paragraph"></p>
+    </section>
+</header>
+<article class="questions__padding">
+    <div class="questions__answer">
+        <h3 class="questions__title">industrial
+        </div>
+        </h3>
+            </article>

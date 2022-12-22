@@ -1,0 +1,68 @@
+{% extends 'interfaz_layout.html' %}
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'interfaz_principal/css/syles.css' %}">
+{% endblock %}
+{% block content %}
+    <article class="questions__padding">
+        <div class="questions__answer">
+            <h3 class="questions__title">industrial
+            </div>
+            </h3>
+                </article>
+    <main>
+        <div class="gallery-container">
+            <a href="{% static '/img/1.png' %}" class="gallery-items">
+                <img src="{% static 'img/1.png'%}" alt="Imagen 1">
+            </a>
+            <a href="{% static '/img/2.png'%}"class="gallery-items">
+                <img src="{% static './img/2.png'%}"alt="Imagen 3">
+            </a>
+            <a href="{% static './img/3.png'%}" class="gallery-items">
+                <img src="{% static './img/3.png'%}" alt="Imagen 4">
+            </a>
+            <a href="{% static './img/4.png'%}" class="gallery-items">
+                <img src="{% static './img/4.png'%}" alt="Imagen 5">
+            </a>
+            <a href="{% static './img/5.png'%}" class="gallery-items">
+                <img src="{% static './img/5.png'%}"alt="Imagen 6">
+            </a>
+            <a href="{% static './img/6.png'%}"class="gallery-items">
+                <img src="{% static './img/6.png'%}" alt="Imagen 7  ">
+            </a>
+            <a href="{% static './img/7.png'%}" class="gallery-items">
+                <img src="{% static './img/7.png'%}"alt="Imagen 8">
+            </a>
+            <a href="{% static './img/8.png'%}" class="gallery-items">
+                <img src="{% static './img/8.png'%}" alt="Imagen 9">
+            </a>
+        </div>
+    </main>
+    <br>
+    <article class="questions__padding">
+        <div class="questions__answer">
+            <h3 class="questions__title">Privado</h3>
+        </div>
+    </article>
+    <br>
+    <main>
+        <div class="gallery-container">
+            <a href="{% static './img/9.png'%}" class="gallery-items">
+                <img src="{% static './img/9.png'%}"alt="Imagen 9">
+            </a>
+            <a href="{% static './img/10.png'%}" class="gallery-items">
+                <img src="{% static './img/10.png'%}" alt="Imagen 10">
+            </a>
+
+
+            <a href="{% static './img/11.png'%}" class="gallery-items">
+                <img src="{% static './img/11.png'%}" alt="Imagen 11">
+            </a>
+            <a href="{% static './img/12.png'%}" class="gallery-items">
+                <img src="{% static './img/12.png'%}"alt="Imagen 12">
+            </a>
+        </div>        
+    </main>
+    <br><br><br><br><br><br>
+</section>
+ {% endblock %}
